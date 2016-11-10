@@ -1,0 +1,63 @@
+@import '../../../variables.scss';
+
+$color-50: #FFF;
+$color-100: #F5F5F5;
+$color-300: #E0E0E0;
+$color-400: #D2D2D2;
+$color-500: #9E9E9E;
+
+.root {
+  transition: margin-left 0.25s ease-out,width 0.25s ease-out;
+  flex: 5500 1 605px;
+  min-width: 405px;
+  padding: 30px 25px;
+  overflow: auto;
+  z-index: 2;
+  scrollbar-base-color: inherit;
+  scrollbar-face-color: inherit;
+  scrollbar-shadow-color: inherit;
+  scrollbar-highlight-color: inherit;
+  scrollbar-3dlight-color: inherit;
+  scrollbar-darkshadow-color: inherit;
+  scrollbar-track-color: inherit;
+  scrollbar-arrow-color: #c8c8c8;
+
+  &::-webkit-scrollbar {
+    height: 18px;
+    width: 18px;
+  }
+  &::-webkit-scrollbar:disabled {
+    display: none
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    min-height: 50px
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    min-width: 50px
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 6px solid $color-50;
+    background-color: $color-400;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    border: 6px solid $color-50;
+    background-color: $color-500;
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background: $color-500;
+  }
+  &::-webkit-scrollbar-track {
+    background: $color-50;
+  }
+  &::-webkit-scrollbar-corner {
+    background: $color-50;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+.dummy {
+  display: inline-block;
+  color: #7D7D7D;
+}

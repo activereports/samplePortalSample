@@ -1,0 +1,6 @@
+{
+  "name": "Prompt",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Prompt.js"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ActiveReports Portal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/react-select.min.css" />
+
+    <style>
+        body {
+            background: #EFF0F1;
+        }
+        #l_root {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            background: #EFF0F1;
+            z-index: 100;
+        }
+        #l_cnt {
+            position: relative;
+            top: 35%;
+            width: 25%;
+            margin: auto;
+            min-width: 240px;
+            max-width: 320px;
+         }
+        #l_anim {
+            font-size: 24px;
+            text-align: center;
+            margin: 30px;
+            color: #D4D8E2;
+        }
+        #l_msg {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            color: #6E6E73;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div id="l_root" role="progressbar">
+            <div id="l_cnt">
+                <div id="l_anim">
+                    <span class="fa-stack">
+                        <i class="fa fa-refresh fa-spin fa-stack-1x"></i>
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    </span>
+                </div>
+                <div id="l_msg">Loading</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@import '../../../variables.scss';
+
+
+.message {
+  color: #717171;
+  margin: 30px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.muted {
+  background: #F1F2F5;
+  max-height: 100%;
+  transition: height .25s ease-out;
+}

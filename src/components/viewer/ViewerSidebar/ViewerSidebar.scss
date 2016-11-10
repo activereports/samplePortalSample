@@ -1,0 +1,198 @@
+$color-50:  #F9FAFB;
+$color-100: #F5F5F5;
+$color-300: #E0E0E0;
+$color-400: #D2D2D2;
+$color-500: #9E9E9E;
+
+.root {
+  background: #F9FAFB;
+  border-right: 1px solid #D8DCE2;
+  display: flex;
+  flex: 1 0 400px;
+  justify-content: flex-start;
+  margin-left: -400px;
+  max-width: 400px;
+  position: relative;
+  transition: margin-left .2s;
+  z-index: 0;
+
+  &_visible { margin-left: 0; }
+}
+
+
+.container {
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  scrollbar-base-color: inherit;
+  scrollbar-face-color: inherit;
+  scrollbar-shadow-color: inherit;
+  scrollbar-highlight-color: inherit;
+  scrollbar-3dlight-color: inherit;
+  scrollbar-darkshadow-color: inherit;
+  scrollbar-track-color: inherit;
+  scrollbar-arrow-color: #c8c8c8;
+
+  &::-webkit-scrollbar {
+    height: 18px;
+    width: 18px;
+  }
+  &::-webkit-scrollbar:disabled {
+    display: none
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    min-height: 50px
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    min-width: 50px
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 6px solid $color-50;
+    background-color: $color-400;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    border: 6px solid $color-50;
+    background-color: $color-500;
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background: $color-500;
+  }
+  &::-webkit-scrollbar-track {
+    background: $color-50;
+  }
+  &::-webkit-scrollbar-corner {
+    background: $color-50;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+
+.head {
+  border-bottom: 1px solid #D2D4DA;
+  padding: 10px 0 25px;
+  width: 100%;
+
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  &Caption {
+    float: left;
+    width: 90%;
+    font-size: 20px;
+
+    &Text {
+      display: table-cell;
+      line-height: 1.5em;
+    }
+  }
+
+  &Dismiss {
+    float: right;
+    padding: 4px 0;
+    width: 10%;
+    text-align: right;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.nav {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: 0;
+  list-style: none;
+
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+.tab {
+  position: relative;
+  width: 1%;
+  border-top: 4px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  display: table-cell;
+
+  &:hover {
+    border-top-color: #ddd;
+    color: #000011;
+  }
+
+  &_active {
+    border-top-color: #29B5A1;
+    color: #555;
+    font-weight: 500;
+    cursor: default;
+
+    &:hover {
+      border-top-color: #29B5A1;
+      color: #555;
+      font-weight: 500;
+    }
+  }
+
+  &_disabled {
+    opacity: .5;
+  }
+
+  &Action {
+    position: relative;
+    display: block;
+    margin-right: 2px;
+    padding: 10px 15px;
+    color: inherit;
+    text-decoration: none;
+    line-height: 1.42857143;
+
+    &:hover { color: inherit };
+  }
+}
+
+
+.tocList {
+  padding: 0;
+  list-style: none;
+
+  &Item {
+    padding: 2px 0 1px;
+    max-width: 100%;
+
+    span {
+      border-bottom: 1px dashed rgba(0,0,0,0.15);
+      cursor: pointer;
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PropertiesDock",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PropertiesDock.js"
+}

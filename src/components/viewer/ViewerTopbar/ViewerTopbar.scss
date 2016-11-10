@@ -1,0 +1,27 @@
+.root {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.caption {
+  display: table-cell;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 28px 0 0;
+  height: 62px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.dismiss {
+  display: table-cell;
+  width: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}

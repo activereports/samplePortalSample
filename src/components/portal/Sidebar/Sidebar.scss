@@ -1,0 +1,75 @@
+@import '../../../variables.scss';
+
+
+.root {
+  background: $sidebar-bg;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  transition: margin-left .25s ease-out;
+  width: 300px;
+  z-index: 0;
+
+  &_hidden {
+    margin-left: -300px;
+  }
+}
+
+
+.head {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+  transition: min-width 0.25s ease-out;
+  z-index: 1;
+}
+
+
+.body {
+ margin-top: 1px;
+}
+
+
+.branding {
+  display: table;
+  height: 80px;
+  max-width: 80%;
+  width: 100%;
+}
+
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
+.dismiss {
+  align-items: center;
+  color: $sidebar-color;
+  cursor: pointer;
+  display: inline-flex;
+  height: 100%;
+  opacity: .5;
+  padding: 0 25px 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}

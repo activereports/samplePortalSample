@@ -1,0 +1,6 @@
+{
+  "name": "AssignTo",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AssignTo.js"
+}

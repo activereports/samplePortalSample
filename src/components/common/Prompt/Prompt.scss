@@ -1,0 +1,50 @@
+@import '../../../variables.scss';
+
+
+.target {
+  color: #7D7D7D;
+  margin: 10px 2px 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.loader {
+  padding: 58px;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.muted {
+  background: #F1F2F5;
+  max-height: 100%;
+  transition: height .25s ease-out;
+}
+
+
+.input {
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #555;
+  display: block;
+  font-size: 13px;
+  line-height: 1.42857143;
+  margin: 25px 0 10px;
+  padding: 10px 12px;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  width: 100%;
+
+  &:focus {
+    outline: 0;
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  }
+
+  &[disabled] {
+    cursor: default;
+    background: #F5F5F5;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03);
+  }
+}

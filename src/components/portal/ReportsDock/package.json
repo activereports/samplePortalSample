@@ -1,0 +1,6 @@
+{
+  "name": "ReportsDock",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ReportsDock.js"
+}

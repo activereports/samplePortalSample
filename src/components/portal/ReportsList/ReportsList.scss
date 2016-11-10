@@ -1,0 +1,98 @@
+@import '../../../variables.scss';
+
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+
+.th {
+  cursor: default;
+  font-weight: 500;
+  padding: 10px 4px;
+  text-align: left;
+  user-select: none;
+
+  &:first-child {
+    padding-left: 14px;
+  }
+}
+
+
+.row {
+  user-select: none;
+
+  &:hover {
+    background: $reportsListItem-bg--hover;
+  }
+
+  &_active,
+  &_active:hover {
+    background: $reportsListItem-bg--active;
+  }
+}
+
+
+.cell {
+  border-spacing: 1px;
+  border-bottom-color: #ccc;
+  border-top-color: white;
+  color: $reportsListItem-color;
+  cursor: default;
+  font-size: $font-size-reportsList;
+  padding: 10px 4px;
+  vertical-align: middle;
+
+  &:first-child {
+    padding-left: 14px;
+  }
+
+  &_title {
+    color: $reportsListPrimary-color;
+  }
+
+  &_actions {
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+
+.tools {
+  margin-right: 6px;
+}
+
+
+.external {
+  margin-left: 8px;
+  opacity: .6;
+  vertical-align: text-bottom;
+  visibility: hidden;
+}
+
+
+.link {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  margin-right: 4px;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    padding: 1px 0;
+
+    & ~ .external {
+      visibility: visible;
+    }
+  }
+}
+
+.meta {
+  margin-left: 8px;
+  color: #D3D4DA;
+
+  .row_active & {
+    color: #FFF;
+  }
+}

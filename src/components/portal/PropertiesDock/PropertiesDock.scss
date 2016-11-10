@@ -1,0 +1,34 @@
+@import '../../../variables.scss';
+
+
+.root {
+  background: $propertiesDock-bg;
+  border-left: 1px solid $propertiesDockBorder-color;
+  display: flex;
+  flex: 4500 0 495px;
+  justify-content: flex-start;
+  max-width: 400px;
+  position: relative;
+  transition: margin-right .2s;
+  z-index: 0;
+
+  &_hidden { margin-right: -400px; }
+}
+
+
+.dummy {
+  width: 100%;
+  text-align: center;
+}
+
+
+.icon {
+  font-size: 26px;
+  opacity: .35;
+  margin: 40px 0 30px;
+}
+
+
+.caption {
+  font-size: 14px;
+}

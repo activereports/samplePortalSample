@@ -1,0 +1,69 @@
+/*
+ * Colors
+ * ======================================================================== */
+
+$body-bg:                     #FFF;
+$text-color:                  #626161;
+$error-color:                 #EF191F;
+$link-color:                  #4183C4;
+$link-color-hover:            #1E70BF;
+
+$primaryAction-color:         #FFF;
+$primaryAction-color-hover:   #FFF;
+$primaryAction-bg:            #0BB165;
+$primaryAction-bg-hover:      #00A258;
+
+$primaryButton-color:         #FFF;
+$primaryButton-color-hover:   #FFF;
+$primaryButton-bg:            #3F4B98;
+$primaryButton-bg-hover:      #2A357D;
+
+$sidebar-bg:                  #313146;
+$sidebar-color:               #FFF;
+
+$topbar-bg:                   #F3F3F5;
+$topbarBorder-color:          #E2E3E4;
+
+$toolbar-bg:                  #F7F7F7;
+$toolbarBorder-color:         #D8DCE2;
+$toolbarIcon-color:           #6E6E77;
+$toolbarIcon-color--hover:    #6E6E77;
+
+$propertiesDock-bg:           #FAFAFB;
+$propertiesDockBorder-color:  #ECEDEF;
+$propertiesTab-color:         #ECEDEF;
+$propertiesTab-color--hover:  #CCC;
+$propertiesTab-color--active: $primaryAction-bg;
+
+$tagsTreeItem-color:          #BCBCC3;
+$tagsTreeItem-color--hover:   #3A3A52;
+$tagsTreeItem-color--active:  #FFF;
+$tagsTreeItem-bg--active:     #2A2A3A;
+
+$reportsListItem-bg--active:  #DEDEE4;
+$reportsListItem-bg--hover:   #F5F5F5;
+$reportsListItem-color:       #9C9CA2;
+$reportsListPrimary-color:    #53565A;
+
+$notification-bg:             #FFDC80;
+$notification-color:          $text-color;
+
+/*
+ * Typography
+ * ======================================================================== */
+
+$font-family-base:            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-base:              14px;
+$line-height-base:            1.428571429;
+
+$font-size-reportsList:       13px;
+
+
+/*
+ * Media queries breakpoints
+ * ======================================================================== */
+
+$screen-xs-min:         480px;  /* Extra small screen / phone */
+$screen-sm-min:         768px;  /* Small screen / tablet */
+$screen-md-min:         992px;  /* Medium screen / desktop */
+$screen-lg-min:         1200px; /* Large screen / wide desktop */

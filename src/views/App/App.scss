@@ -1,0 +1,68 @@
+@import '../../variables.scss';
+
+/*
+ * Base styles
+ * ========================================================================== */
+
+* { box-sizing: border-box; }
+
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family:      $font-family-base;
+  font-size:        $font-size-base;
+  line-height:      $line-height-base;
+  color:            $text-color;
+  background-color: $body-bg;
+}
+
+
+/*
+ * Container
+ * ========================================================================== */
+
+.root {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 0;
+}
+
+.busy {
+  background: rgba(255, 255, 255, .2);
+  bottom: 0;
+  font-size: 30px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 50%;
+    width: 100%;
+    margin-top: -30px;
+  }
+}

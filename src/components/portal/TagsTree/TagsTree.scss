@@ -1,0 +1,85 @@
+@import '../../../variables.scss';
+
+.node {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  &:first-child {padding-left: 0;}
+  &_collapsed {display: none;}
+  &_expanded {display: block;}
+}
+
+
+.child {
+  color: $tagsTreeItem-color;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &_hovered:before {
+    background-color: $tagsTreeItem-color--hover;
+    content: "";
+    display: block;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &_active {
+    font-weight: 500;
+    color: $tagsTreeItem-color--active;
+    cursor: default;
+    &:before,
+    &:hover:before {
+      background: $tagsTreeItem-bg--active;
+      content: "";
+      display: block;
+      height: 32px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+
+.toggle {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  z-index: 1;
+  cursor: default;
+}
+
+
+.label {
+  display: inline;
+  line-height: inherit;
+  position: absolute;
+  vertical-align: middle;
+  z-index: -1;
+}
+
+
+.icon {
+  font-size: 18px;
+  color: #5A5A80;
+  position: relative;
+  bottom: 2px;
+  display: inline-block;
+
+  &_special {
+    font-size: 8px;
+    color: $tagsTreeItem-color;
+  }
+}

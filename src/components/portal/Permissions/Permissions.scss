@@ -1,0 +1,97 @@
+@import '../../../variables.scss';
+
+
+.target {
+  color: #7D7D7D;
+  margin: 10px 2px 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.loader {
+  padding: 58px;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.muted {
+  background: #F1F2F5;
+  max-height: 100%;
+  transition: height .25s ease-out;
+}
+
+
+.form {
+  font-size: 13px;
+  width: 100%;
+  border: 1px solid #DFE1E6;
+  box-shadow: 0 1px 0 #E6E9EC;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+
+.th {
+  padding: 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px solid #DFE1E6;
+}
+
+
+.cell {
+  vertical-align: middle;
+  text-align: left;
+  padding: 0 20px 6px;
+
+  &:first-child {
+    width: 1%;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  &:last-child {
+    text-align: left;
+  }
+}
+
+
+.row {
+  &:first-child .cell { padding-top: 20px; }
+  &:last-child .cell { padding-bottom: 20px; }
+}
+
+
+.control {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  height: 39px;
+
+  &:focus {
+    outline: 0;
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  }
+
+  &[disabled] {
+    cursor: default;
+    background: #F5F5F5;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03);
+  }
+}
+
+.name {
+  font-weight: 500;
+}

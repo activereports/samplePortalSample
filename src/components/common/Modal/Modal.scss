@@ -1,0 +1,173 @@
+@import '../../../variables.scss';
+
+.root {
+  bottom: 0;
+  display: block;
+  left: 0;
+  outline: 0;
+  overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.backdrop {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+
+.body {
+  position: relative;
+  padding: 15px;
+
+  &_muted {
+    background: #F1F2F5;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+
+.dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  pointer-events: all;
+
+  @media (min-width: 768px) {
+    width: 600px;
+    margin: 30px auto;
+  }
+}
+
+
+.content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+  outline: 0;
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+
+  @media (min-width: 768px) {
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+
+
+.button {
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #E4E4E4;
+  color: #868686;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: $line-height-base;
+  margin: 0 2px;
+  padding: 6px 12px;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover:not(:disabled) {
+    color: #333;
+    background: #fff;
+  }
+
+  &_primary {
+    color: $primaryButton-color;
+    background-color: $primaryButton-bg;
+    border-color: $primaryButton-bg;
+
+    &:hover:not(:disabled) {
+      color: $primaryButton-color-hover;
+      background: $primaryButton-bg-hover;
+      border-color: $primaryButton-bg-hover;
+    }
+  }
+
+  &_disabled {
+    opacity: .5;
+    cursor: default;
+  }
+
+  &_left {
+    float: left
+  }
+
+  &_right {
+    float: right
+  }
+}
+
+
+.header {
+  min-height: 16.43px;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+.close {
+  float: right;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .2;
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+  }
+}
+
+
+.caption {
+  margin: 0;
+  line-height: 1.42857143;
+}
+
+
+.footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+

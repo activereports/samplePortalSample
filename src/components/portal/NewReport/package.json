@@ -1,0 +1,6 @@
+{
+  "name": "NewReport",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./NewReport.js"
+}

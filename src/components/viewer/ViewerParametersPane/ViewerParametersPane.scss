@@ -1,0 +1,58 @@
+@import '../../../variables.scss';
+
+
+.group {
+  margin-bottom: 15px;
+
+  &_error {
+    color: #bf0032;
+  }
+
+  &_hidden {
+    display: none;
+  }
+}
+
+
+.label {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-left: 2px;
+  max-width: 100%;
+  color: #404448;
+  font-weight: 400;
+  font-size: 15px;
+
+  .error & {
+    color: #bf0032;
+  }
+}
+
+
+.help {
+  padding: 8px 0 5px 2px;
+  font-size: 12px;
+}
+
+.button {
+  border-radius: 1px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 6px 14px;
+  background: #29B5A1;
+  border-color: #23A592;
+  color: #fff;
+
+  &:hover { background: #23A592; }
+
+  &_disabled {
+    background: #E4E3E3;
+    border-color: #D2D2D2;
+    color: #888;
+    cursor: default;
+    opacity: 1;
+
+    &:hover { background: #E4E3E3; }
+  }
+}

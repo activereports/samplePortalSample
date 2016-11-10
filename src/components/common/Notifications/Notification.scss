@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+
+
+.root {
+  align-items: stretch;
+  background-color: $notification-bg;
+  display: flex;
+  flex-shrink: 0;
+  min-height: 40px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+
+.left {
+  align-items: center;
+  display: flex;
+}
+
+
+.right {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+
+
+.dismiss {
+  color: inherit;
+  cursor: pointer;
+  width: 26px;
+  text-align: center;
+  &:hover {
+    color: #000;
+  }
+}
+
+.message {
+  display: block;
+}
+
+
+.title {
+  font-size: 18px;
+}
+
+
+.text {
+  font-size: 14px;
+}

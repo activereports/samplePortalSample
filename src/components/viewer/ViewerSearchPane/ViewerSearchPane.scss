@@ -1,0 +1,133 @@
+@import '../../../variables.scss';
+
+.checkboxes {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.checkbox {
+  position: absolute;
+  box-sizing: border-box\9;
+  margin-top: 4px;
+  margin-left: -20px;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+
+.label {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+
+.input {
+  display: block;
+  padding: 6px 12px;
+  width: 100%;
+  height: 34px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: #555;
+  font-size: 14px;
+  line-height: 1.42857143;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+  &:focus {
+    outline: 0;
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  }
+}
+
+
+.matches {
+  padding: 20px 0;
+}
+
+
+.item {
+  display: list-item;
+  border-top: 1px solid rgba(34,36,38,.15);
+  table-layout: fixed;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 6px 0;
+
+  &:first-child {
+    border-top: none
+  }
+
+  &Page {
+    color: #ccc;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  &Text {
+    margin-left: 10px;
+    color: $link-color;
+    cursor: pointer;
+    &:hover { color: $link-color-hover; }
+  }
+}
+
+
+.button {
+  background: transparent;
+  border-radius: 1px;
+  border: 1px solid #C2C4C7;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 8px 14px;
+  user-select: none;
+
+  &:hover { background: rgba(0, 0, 0, 0.05); }
+
+  &_primary {
+    background: #29B5A1;
+    border-color: #23A592;
+    color: #fff;
+    &:hover { background: #23A592; }
+  }
+
+  &_disabled {
+    background: #E4E3E3;
+    border-color: #D2D2D2;
+    color: #888;
+    cursor: default;
+    opacity: 1;
+    &:hover { background: #E4E3E3; }
+  }
+
+  span:last-child {
+    margin-left: 6px;
+  }
+}
+
+
+.buttons {
+  margin-top: 20px;
+}
+
+
+.results {
+  margin: 10px 0;
+}
