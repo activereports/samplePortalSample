@@ -20,6 +20,24 @@ This is a Report Portal which runs on ActiveReports Server. It has been created 
   * `node-gyp` prerequisites mentioned [here](https://github.com/nodejs/node-gyp)
   * Text editor or IDE pre-configured with React/JSX/Flow/ESlint ([learn more](./how-to-configure-text-editors.md))
 
+### ActiveReports Server prerequisites
+
+This sample code works with ActiveReports Server's REST API.
+
+For the sample to work properly, the ActiveReports Server web site needs to accept cross-domain requests. Add the following lines to the system.webServer section of the web.config file located in the <ActiveReports Server Installation folder>\site directory.
+
+```
+    <httpProtocol>
+      <customHeaders>
+        <add name="Access-Control-Allow-Origin" value="*" />
+        <add name="Access-Control-Allow-Headers" value="Authorization, Origin, Content-Type, Accept, X-Requested-With, AuthToken" />
+        <add name="Access-Control-Allow-Methods" value="GET, PATCH, POST, PUT, DELETE, OPTIONS" />
+      </customHeaders>
+    </httpProtocol>
+```
+
+If you are using Internet Explorer, the sample application requires IE 10 or higher.
+
 
 ### Directory Layout
 
